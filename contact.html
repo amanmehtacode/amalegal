@@ -436,6 +436,8 @@
         </div>
         <div id="content"></div>
 
+        <script src="assets/scripts/contact.js"></script>
+
         <section>
           <div class="vlt-gap-120"></div>
           <div class="container">
@@ -532,23 +534,7 @@
                   />
                 </div>
               </form>
-              <script>
-                window.addEventListener("load", function() {
-                  const form = document.getElementById('my-form');
-                  form.addEventListener("submit", function(e) {
-                    e.preventDefault();
-                    const data = new FormData(form);
-                    const action = e.target.action;
-                    fetch(action, {
-                      method: 'POST',
-                      body: data,
-                    })
-                    .then(() => {
-                      alert("Success!");
-                    })
-                  });
-                });
-              </script>
+              
                 </div>
                 <div class="vlt-gap-60--md"></div>
               </div>
